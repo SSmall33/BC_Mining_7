@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Lab 3 Fixed Layout</title>
+   
+    <!-- Your styles from style.css -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+
+
+    
+  </head>
+  
+  <body>
+    
+    <div class="container">
+   
+      <!-- Header -->
+      <div class="header">
+        <h1>Recreation areas and trailheads in Boulder County within one mile of an abandoned  hard rock mine</h1>
+      </div>
+      
+<!-- Main content - layers  -->
+      <div class="content">  
+        <div class="sidebar">
+          <div id="layers">
+            <h2>Results</h2>
+            Of the 537 recreation areas and trailheads combined, 114 locations were within 1 mile of an abandoned mine, all located in the foothills, west of Boulder.  
+            <h2>Popup features</h2>
+            Click on a trailhead or recreation area to find out the name or activity pursued.  Click on a mining area polygon for name, commodity mined and hazard rating, from extreme danger to no significant hazard.  
+
+
+            </div>
+                        
+          <div id="legend">
+            <h2>Legend</h2>
+            <img src="Legend3.PNG" />
+          </div>
+        </div>
+
+        
+<!--Placement of map on webpage -->  
+        <div class="main">
+          <div id="map"></div>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <div class="footer">
+        <p>Data sources: U. S. Forest Service, Boulder County, Colorado Geological Survey, Colorado Geospatial Portal, Mapbox, Open Street Maps, ArcGIS Online.  Susan Small, December 2023</p>
+      </div>
+      
+    </div>
+    
+    <!-- JavaScript imports come after this line -->
+
+    <!-- Mapbox GL JS script -->
+
+    <!-- Your JavaScript from script.js-->
+    <script src="script.js"></script>
+  </body>
+</html>
